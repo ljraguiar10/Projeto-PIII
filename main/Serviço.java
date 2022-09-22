@@ -15,7 +15,6 @@ public abstract class Serviço {
     public String getTosa(){
         return this.tosa;
     }
-    
     public void setTosa (String tosa) {
         this.tosa = tosa;
     }
