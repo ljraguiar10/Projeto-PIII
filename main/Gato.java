@@ -2,7 +2,7 @@ package main;
 
 public class Gato extends Pet {
 	
-	public Gato(String nome, double peso, int idade, boolean pelo) {
+	public Gato(String nome, double peso, int idade, String pelo) {
 		super(nome, peso, idade, pelo);
 	}
 

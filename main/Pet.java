@@ -5,9 +5,9 @@ public abstract class Pet {
 	private String nome;
 	private double peso;
 	private int idade;
-    private boolean pelo;
+    private String pelo;
 	
-    public Pet(String nome, double peso, int idade, boolean pelo) {
+    public Pet(String nome, double peso, int idade, String pelo) {
 		this.nome = nome;
 		this.peso = peso;
 		this.idade = idade;
@@ -37,10 +37,10 @@ public abstract class Pet {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public boolean getPelo() {
+	public String getPelo() {
         return this.pelo;
     }
-    public void setPelo(boolean pelo) {
+    public void setPelo(String pelo) {
 		this.pelo = pelo;
 	}
 	public void ficha() {
