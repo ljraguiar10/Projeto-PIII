@@ -5,13 +5,11 @@ public abstract class Pet {
 	private String nome;
 	private double peso;
 	private int idade;
-    private String pelo;
 	
-    public Pet(String nome, double peso, int idade, String pelo) {
+    public Pet(String nome, double peso, int idade) {
 		this.nome = nome;
 		this.peso = peso;
 		this.idade = idade;
-        this.pelo = pelo;
 	}
 
 	public String getNome() {
@@ -37,18 +35,11 @@ public abstract class Pet {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public String getPelo() {
-        return this.pelo;
-    }
-    public void setPelo(String pelo) {
-		this.pelo = pelo;
-	}
 	public void ficha() {
 		System.out.println("------FICHA DO SEU PET------");
 		System.out.println("NOME: "+this.getNome());
 		System.out.println("IDADE: "+this.getIdade()+" anos");
 		System.out.println("PESO: "+this.getPeso()+" kg");
-        System.out.println("");
 	}
 	
 	public String getMessage() {

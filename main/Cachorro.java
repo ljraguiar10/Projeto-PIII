@@ -2,8 +2,8 @@ package main;
 
 public class Cachorro extends Pet {
 	
-	public Cachorro(String nome, double peso, int idade, String pelo) {
-		super(nome, peso, idade, pelo);
+	public Cachorro(String nome, double peso, int idade) {
+		super(nome, peso, idade);
 	}
 
 	public String getMessage() {
