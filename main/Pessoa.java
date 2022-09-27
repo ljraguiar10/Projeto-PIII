@@ -32,4 +32,9 @@ public class Pessoa {
 		this.númeroCadastro = númeroCadastro;
 	}
 
+    @Override
+     public String toString (){
+        return "Nome: " + this.nome + " Status: " + this.status + " Codigo: " + this.númeroCadastro;
+    }
+
 }

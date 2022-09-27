@@ -2,7 +2,7 @@ package main;
 
 public class BalançoAdministrativo {
 
-    private double faturamento; 
+    private double faturamento;
     private int qteAtendimento;
     private int qteServiço;
     private int qteProduto;
