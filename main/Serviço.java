@@ -30,4 +30,9 @@ public abstract class Serviço {
     public void setVacinação (String vacinação) {
         this.vacinação = vacinação;
     }
+
+    @Override
+    public String toString (){
+        return "vermifugaçao : " + this.vermifugação + " vacinação : " + this.vacinação + " tosa : " + this.tosa ;
+    }
 }

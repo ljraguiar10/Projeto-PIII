@@ -5,6 +5,8 @@ public abstract class Pet {
 	private String nome;
 	private double peso;
 	private int idade;
+	private Serviço serviço;
+
 	
     public Pet(String nome, double peso, int idade) {
 		this.nome = nome;
@@ -35,6 +37,16 @@ public abstract class Pet {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+
+	public Serviço getServiço() {
+		return this.serviço;
+		
+	}
+	
+	public void setServiço(Serviço serviço) {
+		this.serviço = serviço;
+	}
+
 	public void ficha() {
 		System.out.println("------FICHA DO SEU PET------");
 		System.out.println("NOME: "+this.getNome());

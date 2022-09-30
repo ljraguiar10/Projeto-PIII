@@ -20,7 +20,7 @@ public class BalançoAdministrativo {
     public void setFaturamento (double faturamento) {
         this.faturamento = faturamento;
     }
-    public int getQteAtendimento(){
+    public int getQteAtendimento(){ 
         return this.qteAtendimento;
     }
     public void setQteAtendimento (int qteAtendimento) {
