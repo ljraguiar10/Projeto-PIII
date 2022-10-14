@@ -12,10 +12,10 @@ public class Main {
   System.out.println(serviço.getValor());
   
 
-  Cliente cliente = new Cliente(2, "Alef", 'M', "98888-8888", "Rua Oito de Dezembro, 99");
-  System.out.println(cliente);
+  Cliente cliente = new Cliente(1, "Gustavo", "Rua 30 de Outubro, 22", "22222-222");
+  System.out.println(cliente.getNome());
   
-  Usuário usuario = new Usuário(1, "barbeiro", "senha");
+  Usuário usuario = new Usuário(1, "Barbeiro", "Madrid");
   System.out.println(usuario);
 
  }
