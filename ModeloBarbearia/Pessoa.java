@@ -1,5 +1,8 @@
 package ModeloBarbearia;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 public abstract class Pessoa {
 
 	private int id;
