@@ -1,56 +1,131 @@
+
 package View;
-
-import javax.swing.JOptionPane;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-
-import Controller.LoginController;
-
 public class Login extends javax.swing.JFrame {
 
-	private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {
+    public Login() {
+        initComponents();
+    }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
 
-	}
+        LabelTituloLogin = new javax.swing.JLabel();
+        LabelUsuario = new javax.swing.JLabel();
+        TextUsuario = new javax.swing.JTextField();
+        LabelSenha = new javax.swing.JLabel();
+        TextSenha = new javax.swing.JPasswordField();
+        ButtonEntrar = new javax.swing.JButton();
+        LabelPainelFundo = new javax.swing.JLabel();
+        LabelLoginFundo = new javax.swing.JLabel();
 
-	private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {
-		this.controller.fizTarefa();
-		System.out.println(TextUsuario.getText()); // usuario
-		System.out.println(TextSenha.getText()); // senha
-	}
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-	private final LoginController controller;
-	private Login view;
+        LabelTituloLogin.setFont(new java.awt.Font("Courier 10 Pitch", 1, 48)); // NOI18N
+        LabelTituloLogin.setForeground(new java.awt.Color(255, 255, 255));
+        LabelTituloLogin.setText("Login");
+        getContentPane().add(LabelTituloLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
 
-	public Login() {
-		initComponents();
-		controller = new LoginController(this.view);
-	}
+        LabelUsuario.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+        LabelUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        LabelUsuario.setText("Usuario");
+        getContentPane().add(LabelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, -1, -1));
 
-	private void initComponents() {
+        TextUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextUsuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 400, 40));
 
-	}
+        LabelSenha.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+        LabelSenha.setForeground(new java.awt.Color(255, 255, 255));
+        LabelSenha.setText("Senha");
+        getContentPane().add(LabelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, -1, -1));
 
-	private javax.swing.JPasswordField TextSenha;
-	private javax.swing.JTextField TextUsuario;
+        TextSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextSenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TextSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 400, 40));
 
-	public void exibeMensagem(String mensagem) {
-		JOptionPane.showMessageDialog(null, mensagem);
-	}
+        ButtonEntrar.setBackground(new java.awt.Color(164, 152, 152));
+        ButtonEntrar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        ButtonEntrar.setForeground(new java.awt.Color(0, 0, 0));
+        ButtonEntrar.setText("Entrar");
+        ButtonEntrar.setActionCommand("ButtonEntrar");
+        ButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonEntrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, 400, 50));
 
-	public JPasswordField getTextSenha() {
-		return TextSenha;
-	}
+        LabelPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/painel-login.png"))); // NOI18N
+        getContentPane().add(LabelPainelFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 590, 520));
 
-	public void setTextSenha(JPasswordField TextSenha) {
-		this.TextSenha = TextSenha;
-	}
+        LabelLoginFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/Logo.jpg"))); // NOI18N
+        getContentPane().add(LabelLoginFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1018));
 
-	public JTextField getTextUsuario() {
-		return TextUsuario;
-	}
+        pack();
+    }// </editor-fold>                        
 
-	public void setTextUsuario(JTextField TextUsuario) {
-		this.TextUsuario = TextUsuario;
-	}
+    private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
 
+    private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void TextSenhaActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Login().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton ButtonEntrar;
+    private javax.swing.JLabel LabelLoginFundo;
+    private javax.swing.JLabel LabelPainelFundo;
+    private javax.swing.JLabel LabelSenha;
+    private javax.swing.JLabel LabelTituloLogin;
+    private javax.swing.JLabel LabelUsuario;
+    private javax.swing.JPasswordField TextSenha;
+    private javax.swing.JTextField TextUsuario;
+    // End of variables declaration                   
 }
