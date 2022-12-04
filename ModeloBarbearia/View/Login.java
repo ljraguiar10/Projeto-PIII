@@ -1,10 +1,16 @@
 
 package View;
 
+import javax.swing.JOptionPane;
+
 public class Login extends javax.swing.JFrame {
+
+    private final LoginController controller;
 
     public Login() {
         initComponents();
+        controller = new LoginController(this);
+        Banco.inicia();
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
@@ -74,10 +80,15 @@ public class Login extends javax.swing.JFrame {
 
     private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
+        
     }                                           
 
     private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
+        this.controller.entrarNoSistema
+        this.controller.fizTarefa();
+        System.out.println(TextUsuario.getText());
+        System.out.println(TextSenha.getSenha())
     }                                            
 
     private void TextSenhaActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -97,6 +108,7 @@ public class Login extends javax.swing.JFrame {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
+             
                     break;
                 }
             }
@@ -116,10 +128,9 @@ public class Login extends javax.swing.JFrame {
             public void run() {
                 new Login().setVisible(true);
             }
-        });
+        }); 
     }
-
-    // Variables declaration - do not modify                     
+                     
     private javax.swing.JButton ButtonEntrar;
     private javax.swing.JLabel LabelLoginFundo;
     private javax.swing.JLabel LabelPainelFundo;
@@ -128,5 +139,20 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel LabelUsuario;
     private javax.swing.JPasswordField TextSenha;
     private javax.swing.JTextField TextUsuario;
-    // End of variables declaration                   
+                      
+    public void exibeMensagem (String mensagem) {
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+    public JPasswordField getTextSenha() {
+        return TextSenha;
+    }
+    public void setTextSenha(JPasswordField TextSenha) {
+        this.TextSenha = TextSenha;
+    }
+    public JTextField getTextUsuario() {
+        return TextUsuario;
+    }
+    public void setTextUsuario (JTextField TextUsuario) {
+        this.TextUsuario = TextUsuario;
+    }
 }
