@@ -1,38 +1,51 @@
-package ModeloBarbearia;
+
+package Model;
 
 import java.util.Date;
 
-public class Cliente extends Pessoa {
 
-	private String endereço;
-	private String cep;
 
-	public Cliente(int id, String nome, char sexo, String dataNascimento, String telefone,
-			String email, String rg, String endereço, String cep) {
-		super(id, nome, sexo, dataNascimento, telefone, email, rg);
-		this.endereço = endereço;
-		this.cep = cep;
-	}
+public class Cliente extends Pessoa{
 
-	public Cliente(int id, String nome, String endereço, String cep) {
-		super(id, nome);
-		this.endereço = endereço;
-		this.cep = cep;
-	}
+    protected String endereco;
+    protected String cep;
 
-	public String getEndereço() {
-		return endereço;
-	}
+    public Cliente(int id, String nome, char sexo, String dataNascimento, String telefone, String email, String rg, String endereco, String cep) {
+        super(id, nome, sexo, dataNascimento, telefone, email, rg);
+        this.endereco = endereco;
+        this.cep = cep;
+    }
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
-	}
+    public Cliente(int id, String nome, String endereco, String cep) {
+        super(id, nome);
+        this.endereco = endereco;
+        this.cep = cep;
+    }
+    
+    
 
-	public String getCep() {
-		return cep;
-	}
+    public String getEndereco() {
+        return endereco;
+    }
 
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    @Override
+    public String toString(){
+        return getNome();
+    }
+
+   
+    
+    
 }
